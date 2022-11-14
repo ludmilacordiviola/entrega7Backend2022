@@ -1,0 +1,26 @@
+{
+  "name": "entregable_7",
+  "version": "0.1.0",
+  "description": "primer entrega proyecto final",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludmilacordiviola/entrega7Backend2022.git"
+  },
+  "author": "Ludmila Cordiviola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludmilacordiviola/entrega7Backend2022/issues"
+  },
+  "homepage": "https://github.com/ludmilacordiviola/entrega7Backend2022#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.3"
+  }
+}
