@@ -1,11 +1,11 @@
 const express = require('express')
 const path = require('path')
 const { Server: IOServer } = require('socket.io')
-const Contenedor = require('./utils/classContenedor.js')
-const Chat = require('./utils/classChat')
+const Contenedor = require('./utils/contenedor.js')
+const Chat = require('./utils/chat')
 
 const app = express()
-const expressServer = app.listen(8080, () => console.log('Server escuchando en el puerto 8080'))
+const expressServer = app.listen(8080, () => console.log('Server listening port 8080'))
 const io = new IOServer(expressServer)
 
 
@@ -17,7 +17,7 @@ const messageArray = []
 
 //Aca vienen las interacciones de io: servidor<-->cliente
 io.on('connection', async socket =>  {
-    console.log(`Se conecto el cliente con id: ${socket.id}`)
+    console.log(`Client ID: ${socket.id} conected`)
     socket.emit('server:products', await contenedor.getAll())
     socket.emit('server:mensajes', await chat.getAll())
 

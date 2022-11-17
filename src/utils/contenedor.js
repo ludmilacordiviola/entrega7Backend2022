@@ -28,7 +28,7 @@ class Contenedor{
             
             
         } catch(error) {
-            console.log(`Ocurrio un error al guardar. El error fue: ${error}`)
+            console.log(`Error al guardar ${error}`)
         }
     }
 
@@ -45,7 +45,7 @@ class Contenedor{
                 return {error: `Producto con id ${id} no encontrado`}
             }
         }catch (error){
-            console.log(`Ocurrio un error al leer archivo. El error fue: ${error}`)
+            console.log(`Error al leer archivo ${error}`)
         }
     }
 
@@ -55,7 +55,7 @@ class Contenedor{
             const parseProducts = await JSON.parse(productos)
             return parseProducts
         } catch (error) {
-            console.log(`Ocurrio un error al leer archivo. El error fue: ${error}`)
+            console.log(`Error al leer archivo ${error}`)
         }
     }
 
@@ -70,9 +70,9 @@ class Contenedor{
             await fs.promises.unlink(`./${this.nombreArchivo}`)
             await fs.promises.writeFile(`./${this.nombreArchivo}`, JSON.stringify(filterProducts, null, "\t"))
             
-            return `El nuevo stock es:`, filterProducts
+            return `Nuevo stock`, filterProducts
         } catch (error) {
-            console.log(`Ocurrio un error al leer archivo. El error fue: ${error}`)
+            console.log(`Error al leer archivo ${error}`)
         }
     }
 
@@ -101,7 +101,7 @@ class Contenedor{
             return filterProducts
 
         } catch (error) {
-            console.log(`Ocurrio un error al leer archivo. El error fue: ${error}`)
+            console.log(`Error al leer archivo ${error}`)
         }
     }
 
@@ -113,7 +113,7 @@ class Contenedor{
             await fs.promises.writeFile(`./${this.nombreArchivo}`, JSON.stringify(products, null, "\t"))
             console.log("Productos eliminados: ", products)
         } catch (error) {
-            console.log(`Ocurrio un error al eliminar archivo. El error fue: ${error}`)
+            console.log(`Error al eliminar archivo ${error}`)
         }
     }
 }

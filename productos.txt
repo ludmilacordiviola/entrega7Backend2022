@@ -10,11 +10,23 @@
 		"price": 580,
 		"thumbnail": "https://discography.ledzeppelin.com/images/ms.jpg",
 		"id": 2
-	}
-]	{
+	},
+	{
 		"title": "Led Zeppelin: The Complete BBC Sessions",
 		"price": 450,
 		"thumbnail": "https://discography.ledzeppelin.com/images/bbc.jpg",
 		"id": 3
+	},
+		"title":"Led Zeppelin: Led Zeppelin IV",
+		"price": 800,
+		"thumbnail": "https://discography.ledzeppelin.com/images/lz4.jpg",
+		"id": 4
+	},
+	{
+		"title":"Led Zeppelin: Led Zeppelin II",
+		"price": 790,
+		"thumbnail": "https://discography.ledzeppelin.com/images/lz2.jpg",
+		"id": 5
 	}
+
 ]
